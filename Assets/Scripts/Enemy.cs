@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private float speed=1.5f;
+    private void Update()
     {
-        
+        transform.Translate(-transform.position.normalized*speed*Time.deltaTime);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 }
