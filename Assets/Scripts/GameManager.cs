@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(enemy,rnd.getRandomPos(DangerRadius),Quaternion.identity);
             _enemyCount++;
+            _canSpawn=false;
+            StartCoroutine(spawn_delay());
         }
     }
 }
