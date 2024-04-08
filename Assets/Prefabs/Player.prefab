@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8635520481321447418}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,8 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3642463608004848460, guid: 74d60acb445bf0142bf6b087f16721ed, type: 3}
-  bulletSpawn: {fileID: 4627248586582968009}
-  shootTimer: 1
+  SpawnPos: {fileID: 4627248586582968009}
+  ShootTimer: 0.25
+  PlayerSpeed: 0.004
 --- !u!58 &7567316315872452481
 CircleCollider2D:
   m_ObjectHideFlags: 0
