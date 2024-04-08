@@ -273,6 +273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124850d67c28c7d4e9679fb718c11afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Wall: {fileID: 793493786448541053, guid: af2d6eb33166f0a4eb3fb9e6f216348f, type: 3}
+  MinSize: 6
+  MaxSize: 10
+  RoomNumber: 10
 --- !u!1 &712690640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1522064357469629690, guid: cc6c405b6b172b24ea107ee6ca65172c, type: 3}
@@ -323,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6953791607116010275, guid: 1466f8a1b9e0c754d8b730f95db95adb, type: 3}
-  MaxEnemyCount: 0
+  MaxEnemyCount: 5
   EnemySpawnTimer: 1.5
   DangerRadius: 3
 --- !u!1 &2105847269
@@ -368,6 +372,10 @@ PrefabInstance:
     - target: {fileID: 1522064357469629690, guid: cc6c405b6b172b24ea107ee6ca65172c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522064357469629690, guid: cc6c405b6b172b24ea107ee6ca65172c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6221862960633075895, guid: cc6c405b6b172b24ea107ee6ca65172c, type: 3}
       propertyPath: m_LocalPosition.x
