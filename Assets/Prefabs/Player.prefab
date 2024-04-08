@@ -103,7 +103,7 @@ MonoBehaviour:
   bullet: {fileID: 3642463608004848460, guid: 74d60acb445bf0142bf6b087f16721ed, type: 3}
   SpawnPos: {fileID: 4627248586582968009}
   ShootTimer: 0.25
-  PlayerSpeed: 0.004
+  PlayerSpeed: 2
 --- !u!58 &7567316315872452481
 CircleCollider2D:
   m_ObjectHideFlags: 0
